@@ -109,21 +109,21 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#">CV</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#research">Publications</a></li>
+        <li><a href="#ongoing-project">Projects</a></li>
+        <li><a href="cv.pdf" download>CV</a></li> <!-- Downloads CV PDF -->
       </ul>
     </div>
   </div>
 </nav>
 
 <!-- Main Content -->
-<div class="container">
+<div class="container" id="home">
   <!-- Profile Section -->
   <div class="row text-center" style="display: flex; justify-content: center;">
     <div class="col-md-5">
-      <img class="img-responsive" src="headshot copy.jpg" alt="Zhengtai Gou Headshot" style="margin-bottom: 20px; max-width: 100%;">
+      <img class="img-responsive" src="headshot.jpg" alt="Zhengtai Gou Headshot" style="margin-bottom: 20px; max-width: 100%;">
     </div>
     <div class="col-md-5">
       <div class="profile-info">
@@ -154,9 +154,9 @@
   </div>
 
   <!-- Research Section -->
-  <div class="row">
+  <div class="row" id="research">
     <div class="col-md-10 col-md-offset-1" style="margin-top: 20px;">
-      <h2 id="research">Research</h2>
+      <h2>Research</h2>
 
       <!-- First Research Paper -->
       <div class="research-paper">
@@ -164,7 +164,7 @@
           <img src="unlockfear.png" alt="Research Image 1">
         </div>
         <div class="research-details">
-          <h3>UnlockFear: Predicting Fine-Grained Fear of Heights with Physiological Signals in Virtual Reality for Exposure Therapy</h3>
+          <h3><a href="https://example.com">UnlockFear: Predicting Fine-Grained Fear of Heights with Physiological Signals in Virtual Reality for Exposure Therapy</a></h3>
           <p><strong>Zhengtai Gou</strong>, Yuntao Wang, Yuchen Yao, Dr. Nan Gao, Zihao Liu, Lei Zhan, Kun Feng, Liang Zhang, Yukang Yan, Yuanchun Shi</p>
           <p><em>The 25th IEEE Conference on Virtual Reality and 3D User Interfaces (IEEE VR'25, under review)</em></p>
           <p>
@@ -181,7 +181,7 @@
           <img src="Rdog.png" alt="Research Image 2">
         </div>
         <div class="research-details">
-          <h3>Navigating Real-World Challenges: A Quadruped Robot Guiding System for Visually Impaired People in Diverse Environments</h3>
+          <h3><a href="https://example.com">Navigating Real-World Challenges: A Quadruped Robot Guiding System for Visually Impaired People in Diverse Environments</a></h3>
           <p>Shaojun Cai, Ashwin Ram, <strong>Zhengtai Gou</strong>, Mohd Alqama Wasim Shaikh, Yu-An Chen, Yingjia Wan, Kotaro Hara, Shengdong Zhao, David Hsu</p>
           <p><em>Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems (CHI'24, <strong>Honorable Mention</strong>)</em></p>
           <p>
@@ -198,7 +198,7 @@
           <img src="webjump.png" alt="Research Image 3">
         </div>
         <div class="research-details">
-          <h3>WebJump: AR-facilitated Distributed Display of Web Pages</h3>
+          <h3><a href="https://example.com">WebJump: AR-facilitated Distributed Display of Web Pages</a></h3>
           <p>Xin Zeng, Xiaoyu Wang, <strong>Zhengtai Gou</strong>, Yiqiang Chen, Tengxiang Zhang</p>
           <p><em>Extended Abstracts of the 2023 CHI Conference on Human Factors in Computing Systems (CHI EA'23)</em></p>
           <p>
@@ -212,15 +212,18 @@
   </div>
 
   <!-- Ongoing Project Section -->
-  <div class="row">
+  <div class="row" id="ongoing-project">
     <div class="col-md-10 col-md-offset-1" style="margin-top: 20px;">
-      <h2 id="ongoing-project">Ongoing Project</h2>
+      <h2>Ongoing Project</h2>
 
       <!-- Ongoing Project Item -->
       <div class="research-paper">
+        <div class="research-image">
+          <img src="ongoing_project.png" alt="Ongoing Project Image"> <!-- New Image for Ongoing Project -->
+        </div>
         <div class="research-details">
-          <h3>Project Title: Immersive Interaction for VR Therapy</h3>
-          <p>Exploring novel VR interaction methods to enhance therapeutic efficacy in treating phobias and anxiety disorders. This project focuses on designing adaptive VR environments that respond to user feedback in real-time.</p>
+          <h3>Facilitating Immersive Analytics with Summarized Semantic-Aware Replay in Virtual Reality</h3>
+          <p>We aim to automatically generate immersive summarized playbacks for visualization tasks, so as to facilitate collaboration and enhance task understanding.</p>
         </div>
       </div>
     </div>
