@@ -12,8 +12,12 @@
   <style>
     .profile-info {
       font-family: 'Oswald', sans-serif;
-      font-size: 32px;
+      font-size: 36px; /* Larger font size for name and title */
       margin-top: 20px;
+    }
+
+    .contact-info {
+      font-size: 16px; /* Increase font size for contact details */
     }
 
     .introduction {
@@ -43,8 +47,8 @@
     }
 
     .research-image {
-      flex: 0 0 150px; /* Adjust width of the research image */
-      margin-right: 15px; /* Add space between the image and text */
+      flex: 0 0 130px; /* Smaller width for the research image */
+      margin-right: 15px; /* Space between image and text */
     }
 
     .research-image img {
@@ -111,24 +115,26 @@
 
 <!-- Main Content -->
 <div class="container">
-  <div class="row">
-    <!-- Headshot and Profile Info -->
-    <div class="col-md-6">
-      <img class="img-responsive" src="headshot copy.jpg" alt="Zhengtai Gou Headshot" style="margin-bottom: 20px;">
+  <!-- Profile Section -->
+  <div class="row text-center" style="display: flex; justify-content: center;">
+    <div class="col-md-5">
+      <img class="img-responsive" src="headshot copy.jpg" alt="Zhengtai Gou Headshot" style="margin-bottom: 20px; max-width: 100%;">
     </div>
-    <div class="col-md-4">
+    <div class="col-md-5">
       <div class="profile-info">
         <b>Zhengtai Gou</b><br>
       </div>
-      <p><b>zhengtai.gou@gmail.com</b></p>
-      <p>Dual Degree in Automation and Industrial Design<br>
-         Xinya College<br>
-         Tsinghua University</p>
-      <p style="margin-top: 10px;">
-        <a href="#">Google Scholar</a><br>
-        <a href="#">Twitter</a><br>
-        <a href="#">LinkedIn</a>
-      </p>
+      <div class="contact-info">
+        <p><b>zhengtai.gou@gmail.com</b></p>
+        <p>Dual Degree in Automation and Industrial Design<br>
+           Xinya College<br>
+           Tsinghua University</p>
+        <p style="margin-top: 10px;">
+          <a href="#">Google Scholar</a><br>
+          <a href="#">Twitter</a><br>
+          <a href="#">LinkedIn</a>
+        </p>
+      </div>
     </div>
   </div>
 
