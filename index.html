@@ -14,6 +14,51 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+
+  <style>
+    /* Add the CSS code here */
+    .research-paper {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .research-image img {
+      width: 100%;
+      max-width: 150px;
+      border: 1px solid #ddd;
+    }
+
+    .research-details h3 {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #1a0dab;
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+
+    .research-details p {
+      margin: 5px 0;
+    }
+
+    .research-details em {
+      color: #6c757d;
+    }
+
+    .research-details a {
+      color: #1a0dab;
+      text-decoration: none;
+    }
+
+    .research-details a:hover {
+      text-decoration: underline;
+    }
+
+    .research-details strong {
+      display: inline-block;
+      margin-top: 5px;
+    }
+  </style>
 </head>
 <body>
 
@@ -73,49 +118,48 @@
   </div> <!-- End of Main Row -->
 
   <!-- Research Section -->
-  <div class="row">
-    <div class="col-md-8" style="margin-top: 4%;">
-      <h2 id="research">Research</h2>
+<div class="col-md-8" style="margin-top: 4%;">
+  <h2 id="research">Research</h2>
 
-      <!-- First Research Paper -->
-      <div class="research-paper">
-        <div class="research-image">
-          <img src="research1.jpg" alt="Research Image 1" style="width: 100%; max-width: 250px;">
-        </div>
-        <div class="research-details">
-          <h3>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</h3>
-          <p>sss,sss</p>
-          <p><em>Conference on Robot Learning (CoRL 2024)</em></p>
-          <p>
-            <a href="#">Website</a> &middot;
-            <a href="#">Paper</a> &middot;
-            <a href="#">Video</a> &middot;
-            <a href="#">Code</a>
-          </p>
-          <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.</p>
-        </div>
-      </div>
-
-      <!-- Second Research Paper -->
-      <div class="research-paper" style="margin-top: 2%;">
-        <div class="research-image">
-          <img src="research2.jpg" alt="Research Image 2" style="width: 100%; max-width: 250px;">
-        </div>
-        <div class="research-details">
-          <h3>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</h3>
-          <p>ff,dd,ss</p>
-          <p><em>qdddqdqd(sss)</em></p>
-          <p>
-            <a href="#">Website</a> &middot;
-            <a href="#">Paper</a> &middot;
-            <a href="#">Video</a> &middot;
-            <a href="#">Code</a>
-          </p>
-          <p>adasdsssssssssssssssssssssssssssssssssfdf, sdsdads.</p>
-        </div>
-      </div>
+  <!-- First Research Paper -->
+  <div class="research-paper" style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+    <div class="research-image" style="flex: 0 0 150px; margin-right: 20px;">
+      <img src="research1.jpg" alt="Research Image 1" style="width: 100%; border: 1px solid #ddd;">
     </div>
-  </div> <!-- End of Research Row -->
+    <div class="research-details" style="flex: 1;">
+      <h3 style="font-weight: bold; color: #1a0dab;">Dynamics-Guided Diffusion Model for Robot Manipulator Design</h3>
+      <p><strong>Xiaomeng Xu, Huy Ha, Shuran Song</strong></p>
+      <p style="color: #6c757d;"><em>Conference on Robot Learning (CoRL 2024)</em></p>
+      <p>
+        <a href="#">Website</a> &middot;
+        <a href="#">Paper</a> &middot;
+        <a href="#">Video</a> &middot;
+        <a href="#">Code</a>
+      </p>
+      <p><strong>TL;DR:</strong> Learning to design task-specific manipulators without task-specific training.</p>
+    </div>
+  </div>
+
+  <!-- Second Research Paper -->
+  <div class="research-paper" style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+    <div class="research-image" style="flex: 0 0 150px; margin-right: 20px;">
+      <img src="research2.jpg" alt="Research Image 2" style="width: 100%; border: 1px solid #ddd;">
+    </div>
+    <div class="research-details" style="flex: 1;">
+      <h3 style="font-weight: bold; color: #1a0dab;">JacobiNeRF: NeRF Shaping with Mutual Information Gradients</h3>
+      <p><strong>Xiaomeng Xu, Yanchao Yang, Kaichun Mo, Boxiao Pan, Li Yi, Leonidas J. Guibas</strong></p>
+      <p style="color: #6c757d;"><em>Conference on Computer Vision and Pattern Recognition (CVPR 2023)</em></p>
+      <p>
+        <a href="#">Website</a> &middot;
+        <a href="#">Paper</a> &middot;
+        <a href="#">Video</a> &middot;
+        <a href="#">Code</a>
+      </p>
+      <p><strong>TL;DR:</strong> Shaping a NeRF to encode mutual correlations in a scene via aligning Jacobians.</p>
+    </div>
+  </div>
+</div>
+
 
   <!-- Publications Section -->
   <div class="row">
